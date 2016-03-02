@@ -2,6 +2,7 @@
 * Plex
 * Plex Pass
 * PlexPy
+* cAdvisor
 
 #Description
 unRAID Docker Templates for Docker images in the "tyler43636" repository.
