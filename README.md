@@ -1,7 +1,7 @@
 #Applications
 * Plex
 * Plex Pass
-
+* PlexPy
 
 #Description
 unRAID Docker Templates for Docker images in the "tyler43636" repository.

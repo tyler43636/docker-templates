@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Beta>False</Beta>
+<Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
+  <Name>unraid-plex</Name>
+  <Description>
+    A python based web application for monitoring, analytics and notifications for Plex Media Server[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where plexpy will store it's configuration file, database and logs.[br]
+  </Description>
+  <Overview>
+    A python based web application for monitoring, analytics and notifications for Plex Media Server
+  </Overview>
+  <Support>https://github.com/tyler43636/unraid-plexpy/issues</Support>
+  <Registry>https://registry.hub.docker.com/u/tyler43636/unraid-plexpy/</Registry>
+  <GitHub>https://github.com/tyler43636/unraid-plexpy</GitHub>
+  <Repository>tyler43636/unraid-plexpy</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+     <Mode>bridge</Mode>
+     <Publish>
+       <Port>
+         <HostPort>8181</HostPort>
+         <ContainerPort>8181</ContainerPort>
+         <Protocol>tcp</Protocol>
+       </Port>
+     </Publish>
+   </Networking>
+  <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>path to config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8181]</WebUI>
+  <Banner>https://raw.githubusercontent.com/tyler43636/docker-templates/master/tyler43636/images/plexpy-banner.png</Banner>
+  <Icon>https://raw.githubusercontent.com/tyler43636/docker-templates/master/tyler43636/images/plexpy-icon.png</Icon>
+  <ExtraParams></ExtraParams>
+</Containers>
