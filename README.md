@@ -2,6 +2,7 @@
 * Plex
 * Plex Pass
 * PlexPy
+* Jackett
 
 #Description
 unRAID Docker Templates for Docker images in the "tyler43636" repository.
