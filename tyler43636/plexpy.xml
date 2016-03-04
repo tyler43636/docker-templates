@@ -12,7 +12,7 @@
     A python based web application for monitoring, analytics and notifications for Plex Media Server
   </Overview>
   <Support>https://github.com/tyler43636/unraid-plexpy/issues</Support>
-  <Registry>https://registry.hub.docker.com/u/tyler43636/unraid-plexpy/</Registry>
+  <Registry>https://hub.docker.com/r/tyler43636/unraid-plexpy/</Registry>
   <GitHub>https://github.com/tyler43636/unraid-plexpy</GitHub>
   <Repository>tyler43636/unraid-plexpy</Repository>
   <BindTime>true</BindTime>
