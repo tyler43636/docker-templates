@@ -10,7 +10,8 @@
     already downloaded when a better quality format becomes available.[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where sonarr will store it's configuration file, database and logs.[br]
-    [b]/data[/b] This path is used to store downloads and media files.[br]
+    [b]/data[/b] This path is used to retrieve the downloaded files by your downloader application.[br]
+    [b]/media[/b] This is where sonarr will scan for media files.
   </Description>
   <Overview>
     Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS
@@ -51,8 +52,13 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>path to data</HostDir>
+      <HostDir>path to downloads</HostDir>
       <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>path to media</HostDir>
+      <ContainerDir>/media</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
