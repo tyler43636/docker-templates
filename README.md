@@ -4,6 +4,7 @@
 * PlexPy
 * Jackett
 * cAdvisor
+* Sonarr
 
 #Description
 unRAID Docker Templates for Docker images in the "tyler43636" repository.
