@@ -5,6 +5,7 @@
 * Jackett
 * cAdvisor
 * Sonarr
+* Mattermost
 
 #Description
 unRAID Docker Templates for Docker images in the "tyler43636" repository.

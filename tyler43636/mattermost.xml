@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+<Category>Productivity:Tools:</Category>
+  <Name>mattermost</Name>
+  <Description>Mattermost is an open source, self-hosted Slack-alternative</Description>
+  <Registry>https://hub.docker.com/r/tyler43636/unraid-mattermost/</Registry>
+  <Repository>tyler43636/unraid-mattermost:latest</Repository>
+  <BindTime>true</BindTime>
+  <Environment>
+    <Variable>
+      <Name>detach</Name>
+      <Value>true</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8065</HostPort>
+        <ContainerPort>8065</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>path to config and data</HostDir>
+      <ContainerDir>/mattermost</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version></Version>
+  <WebUI>http://[IP]:[PORT:8065]</WebUI>
+  <Banner>https://raw.githubusercontent.com/tyler43636/docker-templates/master/tyler43636/images/mattermost-banner.png</Banner>
+  <Icon>https://raw.githubusercontent.com/tyler43636/docker-templates/master/tyler43636/images/mattermost-icon.png</Icon>
+</Container>
