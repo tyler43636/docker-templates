@@ -15,7 +15,7 @@
   <Support>https://github.com/tyler43636/unraid-plexpass/issues</Support>
   <Registry>https://hub.docker.com/r/tyler43636/unraid-plexpass</Registry>
   <GitHub>https://github.com/tyler43636/unraid-plexpass</GitHub>
-  <Repository>tyler43636/unraid-plex</Repository>
+  <Repository>tyler43636/unraid-plexpass</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
